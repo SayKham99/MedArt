@@ -1,0 +1,120 @@
+#nav{
+  width: 100%;
+  .nav-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    @media(max-width:1150px){
+      padding: 20px;
+    }
+    .logo{
+      width: 187px;
+      height: 56px;
+      @media(max-width: 430px){
+        width: 107px;
+        height: 46px;
+      }
+      img{
+        width: 187px;
+        height: 56px;
+        object-fit: contain;
+        @media(max-width: 430px){
+          width: 107px;
+          height: 46px;
+        }
+      }
+    }
+    .is-open{
+      display: none;
+      @media(max-width: 902px){
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 100%;
+        background: #ccc;
+        ul{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          list-style: none;
+          li{
+            padding:10px;
+            font-size: 18px;
+            line-height: 20px;
+          }
+        }
+        @media(max-width: 430px){
+          top: 20%;
+        }
+        @media(max-width: 390px){
+          top: 23%;
+        }
+        @media(max-width: 380px){
+          top: 30%;
+        }
+        @media(max-width: 360px){
+          top: 25%;
+        }
+      }
+    }
+    .bars{
+      display: flex;
+      @media(max-width: 902px){
+        display: none;
+      }
+      -moz-animation-delay: 3.5s;
+      -webkit-animation-delay: 3.5s;
+      -o-animation-delay: 3.5s;
+      animation-delay: 3.5s;
+      ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        li{
+          padding:10px;
+          font-size: 18px;
+          line-height: 20px;
+          transition: .3s ease-in;
+          cursor: pointer;
+          &:hover{
+            color: #159EEC;
+          }
+        }
+      }
+    }
+    .make-button{
+      button{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.77px;
+        background: #1F2B6C;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 50px;
+        box-shadow: 2px 2px 5px #1F2B6C;
+        &:hover{
+          opacity: .9;
+          cursor: pointer;
+        }
+        @media(max-width: 430px) {
+          font-size: 14px;
+          padding: 6px 12px;
+        }
+      }
+    }
+    .hamburger{
+      display: none;
+      cursor:pointer;
+      @media(max-width: 902px){
+        display: block;
+      }
+    }
+  }
+}
