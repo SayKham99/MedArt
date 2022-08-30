@@ -2,6 +2,7 @@ import "./home.scss"
 import Emergency from "./Emergency/Emergency";
 import Services from "./Services/Services";
 import Statistics from "./Statistics/Statistic";
+import About from "./AboutUs/About"
 export default function Home(){
     return(
         <>
@@ -25,6 +26,7 @@ export default function Home(){
         </section>
             <Services />
             <Statistics />
+            <About/>
         </>
     )
 }
