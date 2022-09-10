@@ -1,0 +1,112 @@
+.BigContactDiv {
+  width: 100%;
+  height: 100%;
+  background-color: rebeccapurple;
+  background: url(../../../assets/contact-bg.jpeg) center center/cover no-repeat;
+  display: grid;
+  place-items: center;
+
+  .wrapperP {
+    position: relative;
+    margin: 267px auto;
+    margin-bottom: 238px;
+    width: 292px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cnt {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 56px;
+      color: #ffffff;
+    }
+    .detail {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .MapDiv {
+      position: absolute;
+      width: 1340px;
+      height: 768px;
+      display: grid;
+      place-items: center;
+      top: 250px;
+      max-width: 1134px;
+      margin: 0 auto 25px auto;
+      @media (max-width: 1355px) {
+        width: 1240px;
+      }
+      @media (max-width: 1255px) {
+        width: 1140px;
+      }
+      @media (max-width: 1155px) {
+        width: 1040px;
+      }
+      @media (max-width: 1055px) {
+        width: 940px;
+        height: 700px;
+      }
+      @media (max-width: 955px) {
+        width: 840px;
+        height: 650px;
+      }
+      @media (max-width: 855px) {
+        width: 740px;
+        height: 550px;
+      }
+      @media (max-width: 755px) {
+        width: 700px;
+        height: 550px;
+      }
+      @media (max-width: 715px) {
+        width: 660px;
+        height: 500px;
+      }
+      @media (max-width: 675px) {
+        width: 600px;
+        height: 450px;
+      }
+      @media (max-width: 615px) {
+        width: 540px;
+        height: 400px;
+      }
+      @media (max-width: 555px) {
+        width: 500px;
+        height: 400px;
+      }
+      @media (max-width: 515px) {
+        width: 470px;
+        height: 400px;
+      }
+      @media (max-width: 485px) {
+        width: 440px;
+        height: 400px;
+      }
+      @media (max-width: 455px) {
+        width: 400px;
+        height: 360px;
+      }
+      @media (max-width: 415px) {
+        width: 370px;
+        height: 330px;
+      }
+      @media (max-width: 385px) {
+        width: 340px;
+        height: 300px;
+      }
+      @media (max-width: 355px) {
+        width: 300px;
+        height: 270px;
+      }
+      .mapGoogle {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+  }
+}

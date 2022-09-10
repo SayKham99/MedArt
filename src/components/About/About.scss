@@ -9,7 +9,6 @@
       flex-direction: column;
       background: url(../../assets/aboutImg.png) center center/cover no-repeat;
       padding: 267px 0 238px 0;
-
       .title {
         font-weight: 600;
         font-size: 48px;
@@ -41,7 +40,9 @@
         border-radius: 10px;
         overflow: hidden;
         background-color: #fff;
-
+        @media(max-width: 1270px){
+          width: 1000px;
+        }
         &__descr {
           padding: 50px 50px 50px 50px;
 

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-import In from '../../assets/icons/ın.svg'
+import In from '../../assets/icons/in.svg'
 import Facebook from '../../assets/icons/facebook.svg'
 import Instagram from '../../assets/icons/instagram.svg'
 
@@ -159,9 +159,9 @@ const faq2 = [
     },
 ];
 
-console.log(faq)
 
 function About() {
+
     const [expanded, setExpanded] = useState(false);
     const [expanded2, setExpanded2] = useState(false);
     const handleChange = (panel) => (event, isExpanded) => {
@@ -244,55 +244,6 @@ function About() {
 
                 </div>))}
 
-            </div>
-
-            <div className='faq'>
-                <h1 className='title'>FAQs</h1>
-                <div className='accordeons'>
-                    <div className='firstacc'>
-                        {faq.map(acc => (
-                              <Accordion sx={{width: '550px',boxShadow:'none'}} key={acc.id} expanded={expanded === `panel${acc.id}`}
-                                         onChange={handleChange(`panel${acc.id}`)}>
-                                  <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon/>}
-                                        aria-controls={`panel${acc.id}bh-content`}
-                                        id={`panel${acc.id}bh-header`}
-
-                                  >
-                                      <Typography>
-                                          {acc.title}
-                                      </Typography>
-                                  </AccordionSummary>
-                                  <AccordionDetails>
-                                      <Typography>
-                                          {acc.descr}
-                                      </Typography>
-                                  </AccordionDetails>
-                              </Accordion>
-                        ))}
-                    </div>
-                    <div className='secondacc'>
-                        {faq2.map(acc => (
-                              <Accordion sx={{width: '550px',boxShadow:'none'}} key={acc.id} expanded={expanded2 === `panel${acc.id}`}
-                                         onChange={handleChange2(`panel${acc.id}`)}>
-                                  <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon/>}
-                                        aria-controls={`panel${acc.id}bh-content`}
-                                        id={`panel${acc.id}bh-header`}
-                                  >
-                                      <Typography>
-                                          {acc.title}
-                                      </Typography>
-                                  </AccordionSummary>
-                                  <AccordionDetails>
-                                      <Typography>
-                                          {acc.descr}
-                                      </Typography>
-                                  </AccordionDetails>
-                              </Accordion>
-                        ))}
-                    </div>
-                </div>
             </div>
         </div>
     </section>)

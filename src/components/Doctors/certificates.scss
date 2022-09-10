@@ -1,0 +1,95 @@
+#certificate{
+  width: 100%;
+  margin-bottom: 20px;
+  .certificate-wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+    background: url("../../assets/certificate.png");
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    @media(max-width: 1258px){
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    @media(max-width: 430px){
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    .certificate-head{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      h1{
+        padding-top: 80px;
+        font-weight: 800;
+        font-size: 40px;
+        @media(max-width: 1258px){
+          padding-top: 50px;
+        }
+      }
+      h4{
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 24px;
+      }
+      p{
+        max-width: 1100px;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        @media(max-width: 1158px){
+          max-width: 900px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        @media(max-width: 430px){
+          max-width: 360px;
+          text-align: center;
+        }
+      }
+    }
+    .certificate-line{
+      display: flex;
+      flex-direction: row;
+      max-width: 1px;
+      align-items: center;
+      width: 1px;
+      height: 88.59px;
+      margin: 10px auto;
+      background: #fff;
+    }
+    .certificate-statistics{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 710px;
+      margin: 0 auto 0 auto;
+      justify-content: space-between;
+      @media(max-width: 910px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .certificate1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+          color: #fff;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 50px;
+        }
+        p{
+          margin-top: 15px;
+          font-size: 24px;
+          font-weight: 500;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

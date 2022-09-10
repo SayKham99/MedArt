@@ -1,0 +1,70 @@
+#testemonial{
+  width: 100%;
+  background: #E3EAEF;
+  background: #fff;
+  .testemonial-wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+    @media(max-width: 430px){
+      max-width: 350px;
+      margin: 0 auto;
+    }
+    .testemonial-title{
+      padding-top: 70px;
+      img{
+        @media(max-width: 430px){
+          max-width: 200px;
+          margin: 0 auto;
+        }
+      }
+    }
+    .testemonial-body{
+      padding-top: 111px;
+      max-width: 1208px;
+      margin: 0 auto;
+      @media(max-width: 430px){
+        max-width: 350px;
+        margin: 0 auto;
+      }
+      .testimonial-cart{
+        max-width: 658px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .testemonial-desc{
+          max-width: 658px;
+          margin: 0 auto;
+          text-align: center;
+          p{
+            max-width: 658px;
+            margin: 0 auto;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            margin: 37px 0 18px 0;
+            @media(max-width: 430px){
+              max-width: 350px;
+              margin: 0 auto;
+              font-size: 12px;
+              font-weight: 400;
+              line-height:18px;
+            }
+          }
+        }
+        .line{
+          width: 200px;
+          height: .5px;
+          background: rgba(0, 0, 0, 0.5);
+          margin: 15px 0;
+        }
+        .author{
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 30.8px;
+        }
+      }
+    }
+  }
+}
