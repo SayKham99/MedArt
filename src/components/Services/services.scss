@@ -1,0 +1,41 @@
+#services{
+  width: 100%;
+  @media(max-width: 430px){
+    overflow-x: hidden;
+  }
+  .services-wrapper{
+    background: url("../../assets/service.png");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 560px;
+    .services-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .services-title{
+        max-width: 299px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        h1{
+          font-size: 48px;
+          font-weight: 900;
+          line-height: 56.3px;
+          max-width: 299px;
+          margin: 200px auto 0 auto;
+        }
+      h5{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18.77px;
+        margin-top: 10px;
+      }
+      }
+    }
+  }
+  .service-body{
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}

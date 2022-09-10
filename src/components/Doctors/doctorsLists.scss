@@ -1,0 +1,84 @@
+#docotrsLists{
+  width: 100%;
+  height: auto;
+  .doctorsLists-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 20px;
+    max-width: 1230px;
+    margin: -100px auto 0 auto;
+    @media(max-width: 1180px){
+      max-width: 800px;
+      margin: -100px auto 0 auto;
+    }
+    @media(max-width: 808px){
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      margin: -100px auto 0 auto;
+    }
+    .doctor-cart{
+      max-width: 317px;
+      margin: 10px 0 50px 0;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      border-radius: 7px;
+      overflow: hidden;
+      @media(max-width: 808px){
+        max-width: 300px;
+        margin: 0 auto 40px auto;
+      }
+      @media(max-width: 430px){
+        max-width: 300px;
+        margin: 0 auto 40px auto;
+      }
+      .doctor-img{
+        width: 100%;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+          cursor: pointer;
+          transition: .5s ease-in-out;
+          &:hover{
+            transform:scale(1.15);
+          }
+        }
+      }
+      .doctor-info{
+        width: 100%;
+        background: #fff;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h5{
+          margin-top: 24px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #1F2B6C;
+        }
+        h4{
+          font-weight: 700;
+          font-size: 20px;
+          margin-top: 7px;
+        }
+        .social-icons{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 16px;
+          margin-bottom: 20px;
+          cursor: pointer;
+          .icon{
+            margin: 0 10px;
+            &:hover{
+              opacity: .7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

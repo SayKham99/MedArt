@@ -1,0 +1,87 @@
+.BigFooterDiv {
+  margin-top: 720px;
+  width: 100%;
+  height: 100%;
+  padding: 0 2.5rem;
+  max-width: 1234px;
+  margin: 750px auto 25px auto;
+  @media (max-width: 1055px) {
+    margin-top: 650px;
+  }
+  @media (max-width: 955px) {
+    margin-top: 600px;
+  }
+  @media (max-width: 855px) {
+    margin-top: 500px;
+  }
+  @media (max-width: 715px) {
+    margin-top: 450px;
+  }
+  @media (max-width: 675px) {
+    margin-top: 400px;
+  }
+  @media (max-width: 615px) {
+    margin-top: 350px;
+  }
+  @media (max-width: 455px) {
+    margin-top: 315px;
+  }
+  @media (max-width: 415px) {
+    margin-top: 285px;
+  }
+  @media (max-width: 385px) {
+    margin-top: 255px;
+  }
+  @media (max-width: 355px) {
+    margin-top: 220px;
+  }
+  .Left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 999px) {
+      flex-wrap: wrap;
+    }
+
+    .WrapperMap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      .mapImg {
+        width: 39px;
+        height: 39px;
+        @media (max-width: 375px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .phoneTitle {
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 600;
+        @media (max-width: 375px) {
+          font-size: 25px;
+        }
+      }
+      .titleWonderful {
+        font-size: 20px;
+        width: 283.6px;
+        @media (max-width: 375px) {
+          font-size: 18px;
+          width: 250px;
+        }
+      }
+      .PhoneNmb {
+        width: 270px;
+        font-size: 20px;
+        color: #1f2b6c;
+        font-weight: 600;
+        @media (max-width: 375px) {
+          font-size: 18px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}

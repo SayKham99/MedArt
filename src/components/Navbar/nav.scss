@@ -46,6 +46,7 @@
             padding:10px;
             font-size: 18px;
             line-height: 20px;
+            font-family: 'Epilogue', sans-serif;
           }
         }
         @media(max-width: 430px){
@@ -78,13 +79,20 @@
         list-style: none;
         li{
           padding:10px;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 20px;
           transition: .3s ease-in;
           cursor: pointer;
+          color: #000;
+          font-family: 'Epilogue', sans-serif;
+          margin: 0 2px;
           &:hover{
-            color: #159EEC;
+            background: #ddd;
+            border-radius: 3px;
           }
+        }
+        .make-button{
+          margin-left: 60px;
         }
       }
     }
